@@ -1,0 +1,61 @@
+.intrested {
+  width: 100%;
+  background-color: var(--usual-decorations);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.intrested_wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.intrested_title {
+  color: var(--main-bg-color);
+  text-align: center;
+  font-family: 'Gotham-bold';
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.intrested_subtitle {
+  color: var(--main-bg-color);
+  text-align: center;
+  font-family: 'Gotham';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.28px;
+  margin-bottom: 80px;
+}
+.intrested_button {
+  max-width: 420px;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  .intrested {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .intrested_title {
+    font-size: 32px;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+  .intrested_subtitle {
+    font-size: 22px;
+    max-width: 285px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .intrested_button {
+    max-width: 310px;
+    margin: 0 auto;
+  }
+}
