@@ -4,6 +4,17 @@
   height: calc(100svh - 130px);
   width: 100%;
 }
+.th_bg_img {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-image: url('../img/thankyou/bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50px;
+  z-index: 2;
+}
 .main_picture_content {
   margin: 0 auto;
   display: flex;

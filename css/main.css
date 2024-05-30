@@ -120,7 +120,7 @@
   .bg_image_container {
     height: calc(100svh + 200px);
     background-image: url('../img/main/bg.webp');
-    width: 200vw;
+    width: 300vw;
     min-width: auto;
     min-height: auto;
   }

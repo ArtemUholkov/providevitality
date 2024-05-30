@@ -35,7 +35,8 @@
   justify-content: center;
   gap: 30px;
 }
-
+.collapsed {
+}
 .drop-downs {
   width: 60%;
 }
@@ -114,7 +115,7 @@ h5[aria-expanded='true'] .arrow {
   transition: all 0.3s;
 }
 #accordion {
-  min-width: 60%;
+  min-width: 683px;
 }
 
 h5:hover {
@@ -137,8 +138,16 @@ h5:hover {
     min-width: auto;
     width: 100%;
   }
+  #accordion {
+    min-width: 722px;
+    max-width: 722px;
+  }
 }
 @media (max-width: 756px) {
+  #accordion {
+    min-width: 335px;
+    max-width: 335px;
+  }
   .key_title {
     font-size: 26px;
     max-width: 310px;
