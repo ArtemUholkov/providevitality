@@ -54,7 +54,7 @@
     <!-- Slider-swiper -->
     <title>PROVIDEVITALITY</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="image/x-icon" href="img/global/fav.png" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -66,12 +66,14 @@
           </a>
 
           <ul class="navbar_menu">
-            <li><a href="" class="nav_elem">Provider Network</a></li>
-            <li><a href="" class="nav_elem">How it Works</a></li>
-            <li><a href="" class="nav_elem">About Valhalla</a></li>
+            <li><a href="#provider" class="nav_elem">Provider Network</a></li>
+            <li><a href="#hiw" class="nav_elem">How it Works</a></li>
+            <li><a href="#about" class="nav_elem">About Valhalla</a></li>
           </ul>
           <div class="header_button_pair">
-            <a href="#" class="main_button">Request a FREE Demo</a>
+            <a href="" data-toggle="modal" data-target="#exampleModal" class="main_button"
+              >Request a FREE Demo</a
+            >
           </div>
           <div class="burger">
             <div class="burger_space" id="burger">
@@ -85,19 +87,20 @@
           <!-- <img src="img/main/mobbgmenu.png" alt="moblogo" class="mob_menu_bgimage" /> -->
           <div class="popup_textblock" id="popupSlide">
             <ul class="navbar_menu_mobile">
-              <li><a href="" class="nav_elem_mobile">Provider Network</a></li>
+              <li><a href="#provider" class="nav_elem_mobile">Provider Network</a></li>
               <li>
-                <a href="" class="nav_elem_mobile">How it Works</a>
+                <a href="#hiw" class="nav_elem_mobile">How it Works</a>
               </li>
               <li>
-                <a href="" class="nav_elem_mobile">About Valhalla</a>
+                <a href="#about" class="nav_elem_mobile">About Valhalla</a>
               </li>
             </ul>
             <div class="header_button_pair mob_menu_buttons">
               <a
-                href="#contacts"
+                href=""
                 class="main_button mob_button mob_menu_button"
-                onclick="scrollToSub()"
+                data-toggle="modal"
+                data-target="#exampleModal"
                 >Request a FREE Demo</a
               >
             </div>
@@ -108,24 +111,35 @@
     <section class="main_picture">
       <div class="bg_image_container"></div>
       <div class="main_picture_content_wrapper" id="container">
-        <div class="main_text_buttons_wrapper">
+        <div class="main_text_buttons_wrapper" data-aos="fade-up" data-aos-duration="1000">
           <h1>
             Offer your patients access to
             <span class="highlighted_text">cutting-edge therapies</span> today!
           </h1>
           <div class="buttons_wrapper">
             <a href="" class="usual_button white_button">Request a Catalog</a>
-            <a href="" class="usual_button black_button">Request a FREE Demo</a>
+            <a
+              href=""
+              data-toggle="modal"
+              data-target="#exampleModal"
+              class="usual_button black_button"
+              >Request a FREE Demo</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="network">
-      <img src="img/network/bg.webp" alt="background" class="network_background" />
+    <section class="network" id="provider">
+      <img id="provider" src="img/network/bg.webp" alt="background" class="network_background" />
       <div class="network_wrapper">
         <div class="network_content">
-          <img src="img/network/doc.webp" alt="doctor" class="network_content_image" />
-          <div class="network_texts_wrapper">
+          <img
+            src="img/network/doc.webp"
+            data-aos="fade-up"
+            alt="doctor"
+            class="network_content_image"
+          />
+          <div class="network_texts_wrapper" data-aos="fade-up">
             <p class="network_texts_uptitle">Everything you need</p>
             <h2>The Valhalla Vitality <span class="highlighted_text">Provider Network</span></h2>
             <p class="network_texts_description">
@@ -156,29 +170,29 @@
         </div>
       </div>
     </section>
-    <section class="hiw">
+    <section class="hiw" id="hiw">
       <div class="hiw_bgimage"></div>
       <div class="hiw_wrapper">
         <div class="hiw_content">
           <p class="sec_title">How it works:</p>
-          <p class="section_description">
+          <p class="section_description" data-aos="fade-up">
             The Valhalla Provider platform allows you to offer popular treatments without holding
             any inventory or developing your own ecommerce solution.
           </p>
           <div class="hiw_items_wrapper">
-            <div class="hiw_text_item_wrapper">
+            <div class="hiw_text_item_wrapper" data-aos="fade-up">
               <img src="img/hiw/1.webp" alt="" class="hiw_items" />
               <p class="hiw_item_subtext_one">Patient Visits Your Unique Link</p>
             </div>
-            <div class="hiw_text_item_wrapper">
+            <div class="hiw_text_item_wrapper" data-aos="fade-up" data-aos-delay="100">
               <img src="img/hiw/2.webp" alt="" class="hiw_items" />
               <p class="hiw_item_subtext_two">Patient Signs Up + Orders Medicaiton</p>
             </div>
-            <div class="hiw_text_item_wrapper">
+            <div class="hiw_text_item_wrapper" data-aos="fade-up" data-aos-delay="200">
               <img src="img/hiw/3.webp" alt="" class="hiw_items third_img" />
               <p class="hiw_item_subtext_three">You Receive Payment</p>
             </div>
-            <div class="hiw_text_item_wrapper">
+            <div class="hiw_text_item_wrapper" data-aos="fade-up" data-aos-delay="300">
               <img src="img/hiw/4.webp" alt="" class="hiw_items fourth_img" />
               <p class="hiw_item_subtext_four">Medication Shipped Directly To Patient</p>
             </div>
@@ -194,11 +208,11 @@
             Good for you.<br />
             Good for <span class="hightlited_text">your patients.</span>
           </p>
-          <p class="good_subtitle">
+          <p class="good_subtitle" data-aos="fade-up">
             Keeping up with the latest medications and digital ecommerce frameworks can be confusing
             and time-consuming. The Valhalla Provider Network makes it easy.
           </p>
-          <div class="good_items_wrapper">
+          <div class="good_items_wrapper" data-aos="fade-up">
             <div class="good_items_pair">
               <div class="good_item">
                 <img src="img/good/1.svg" alt="" class="good_item_icon" />
@@ -225,7 +239,13 @@
               </div>
             </div>
           </div>
-          <a href="" class="usual_button black_button good_button">Schedule a FREE Demo</a>
+          <a
+            href=""
+            class="usual_button black_button good_button"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            >Schedule a FREE Demo</a
+          >
         </div>
       </div>
     </section>
@@ -236,7 +256,7 @@
             The key to unlocking <span class="hightlited_text">your practices’ potential</span>
           </p>
           <div class="key_content_wrapper">
-            <div class="drop-downs">
+            <div class="drop-downs" data-aos="fade-up">
               <div id="accordion">
                 <div class="card fst_card">
                   <div class="card-header" id="headingOne">
@@ -373,12 +393,12 @@
                 </div>
               </div>
             </div>
-            <img src="img/key/girl.webp" alt="girl" class="key_image" />
+            <img data-aos="fade-up" src="img/key/girl.webp" alt="girl" class="key_image" />
           </div>
         </div>
       </div>
     </section>
-    <section class="platform">
+    <section class="platform" id="about">
       <div class="platform_bgimg"></div>
       <div class="platform_wrapper">
         <div class="platform-content">
@@ -386,8 +406,13 @@
             About the <span class="highlighted_text">Valhalla Vitality Platform</span>
           </p>
           <div class="platform_content_wrapper">
-            <img src="img/platform/img.webp" alt="" class="platform_content_image" />
-            <div class="platform_content_texts">
+            <img
+              data-aos="fade-up"
+              src="img/platform/img.webp"
+              alt=""
+              class="platform_content_image"
+            />
+            <div data-aos="fade-up" class="platform_content_texts">
               <p class="platform_text_description">
                 Valhalla Vitality is a
                 <span class="high_bold">leading online telehealth platform and marketplace</span>
@@ -400,17 +425,24 @@
                 <li class="platform_list_item">Points-Based VIP Loyalty Program</li>
                 <li class="platform_list_item">Customer Education Resources</li>
               </ul>
-              <a href="" class="usual_button orange_button platform_button">Explore the Platform</a>
+              <a
+                href="https://valhallavitality.com/"
+                target="_blank"
+                class="usual_button orange_button platform_button"
+                >Explore the Platform</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="satis">
+      <div class="satis_bg"></div>
+
       <img class="satis_phone" src="img/satis/phone.webp" alt="phone" />
       <img src="img/satis/trust.webp" alt="trust" class="satis_trust" />
       <div class="satis_wrapper">
-        <div class="satis_content">
+        <div class="satis_content" data-aos="fade-up">
           <div class="satis_text_conent">
             <p class="satis_uptitle">A Platform You Can Trust</p>
             <p class="satis_title">Customer Satisfaction</p>
@@ -476,12 +508,18 @@
       </div>
     </section>
     <section class="intrested">
-      <div class="intrested_wrapper">
+      <div class="intrested_wrapper" data-aos="fade-up">
         <p class="intrested_title">Interested in learning more?</p>
         <p class="intrested_subtitle">
           Discover how the Valhalla Provider Network can help grow your business
         </p>
-        <a href="" class="usual_button black_button intrested_button">Request a FREE Demo</a>
+        <a
+          href=""
+          data-toggle="modal"
+          data-target="#exampleModal"
+          class="usual_button black_button intrested_button"
+          >Request a FREE Demo</a
+        >
       </div>
     </section>
     <footer>
@@ -490,31 +528,73 @@
           <img src="img/global/footlogo.png" alt="logo" class="footer_logo" />
         </div>
         <div class="links_wrapper">
-          <a href="" class="footer-nav-link">Provider Network</a>
-          <a href="" class="footer-nav-link">How it works</a>
-          <a href="" class="footer-nav-link">About Valhalla</a>
-          <a href="" class="footer-nav-link">Privacy Policy</a>
-          <a href="" class="footer-nav-link">Terms and Conditions</a>
+          <a href="#provider" class="footer-nav-link">Provider Network</a>
+          <a href="#hiw" class="footer-nav-link">How it works</a>
+          <a href="#about" class="footer-nav-link">About Valhalla</a>
+          <a href="https://valhallavitality.com/privacy-policy" class="footer-nav-link"
+            >Privacy Policy</a
+          >
+          <a href="https://valhallavitality.com/terms-conditions" class="footer-nav-link"
+            >Terms and Conditions</a
+          >
         </div>
-        <a href="" class="usual_button white_button footer_button">Request a FREE Demo</a>
+        <a
+          href=""
+          data-toggle="modal"
+          data-target="#exampleModal"
+          class="usual_button white_button footer_button"
+          >Request a FREE Demo</a
+        >
       </div>
       <div class="socials_wrapper">
         <p class="footer_copy">© Copyright 2024 Valhalla Vitality</p>
         <div class="footer_socials">
-          <a href="" class="social"
+          <a href="https://www.facebook.com/valhallavitalityshop/" target="_blank" class="social"
             ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
           ></a>
-          <a href="" class="social"
+          <a href="https://www.instagram.com/valhalla.vitality/" target="_blank" class="social"
             ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
           ></a>
-          <a href="" class="social"><i class="fa-brands fa-tiktok" style="color: #ffffff"></i></a>
-          <a href="" class="social"><i class="fa-solid fa-phone" style="color: #ffffff"></i></a>
-          <a href="" class="social"
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@valhallavitalityplatform?_t=8j3owurbkqd&_r=1"
+            class="social"
+            ><i class="fa-brands fa-tiktok" style="color: #ffffff"></i
+          ></a>
+          <a href="tel:5162606270" class="social"
+            ><i class="fa-solid fa-phone" style="color: #ffffff"></i
+          ></a>
+          <a href="mailto:medical.intake@valhallavitality.com" class="social"
             ><i class="fa-regular fa-envelope" style="color: #ffffff"></i
           ></a>
         </div>
       </div>
     </footer>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <script
+              type="text/javascript"
+              src="https://form.jotform.com/jsform/241483944592163"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -531,6 +611,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="js/script.js"></script>
 
     <!-- Swiper JS -->

@@ -1,7 +1,7 @@
 .platform {
   width: 100%;
   padding-top: 150px;
-  padding-bottom: 120px;
+  padding-bottom: 150px;
   position: relative;
 }
 .platform_bgimg {
@@ -108,6 +108,7 @@
   .platform_bgimg {
     height: 200px;
   }
+
   .platform {
     padding-top: 50px;
   }

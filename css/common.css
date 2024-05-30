@@ -200,3 +200,6 @@ h2 {
 .section_subtitle {
 }
 /*COMMONT STYLES END*/
+a:hover {
+  cursor: pointer;
+}

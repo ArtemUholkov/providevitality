@@ -35,6 +35,7 @@
   justify-content: center;
   gap: 30px;
 }
+
 .drop-downs {
   width: 60%;
 }
@@ -89,8 +90,10 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 643px;
+  min-width: auto;
   width: 100%;
+}
+.modal-title {
 }
 .arrow {
   transition: all 0.3s;
@@ -113,6 +116,7 @@ h5[aria-expanded='true'] .arrow {
 #accordion {
   min-width: 60%;
 }
+
 h5:hover {
   cursor: pointer;
 }

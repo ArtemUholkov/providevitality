@@ -1,23 +1,96 @@
-h1 {
-  font-size: 35px;
+.main_picture_th {
+  position: relative;
+  top: 130px;
+  height: calc(100svh - 130px);
+  width: 100%;
 }
-.main_picture_content_wrapper {
-  justify-content: flex-start;
-  gap: 30px;
-  margin-top: 38svh;
-}
-.main_picture_content_wrapper_thankyou {
+.main_picture_content {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-@media (max-width: 600px) {
-  .main_picture_content_wrapper {
-    justify-content: flex-start;
-    gap: 30px;
-    margin-top: 30svh;
+.th_icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.th_title {
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 0px 18.7px #fff;
+  font-family: 'Gotham-bold';
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 88px; /* 103.529% */
+  letter-spacing: -4.25px;
+  margin-bottom: 8px;
+}
+.th_subtitle {
+  color: #000;
+  text-align: center;
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 28px;
+  max-width: 833px;
+}
+.thankyou_button {
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.th_explore {
+  color: #000;
+  text-align: center;
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 45px;
+}
+.val_link {
+  color: #d77d20;
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 45px;
+  text-decoration: none;
+}
+.val_link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #d77d20;
+  opacity: 0.8;
+}
+@media (max-width: 720px) {
+  .th_icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  .th_title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 38px;
+  }
+  .th_subtitle {
+    font-size: 24px;
+  }
+  .th_explore {
+    font-size: 24px;
+  }
+  .main_picture_th {
+    position: relative;
+    top: 80px;
+    height: calc(100svh - 80px);
+    width: 100%;
   }
 }
